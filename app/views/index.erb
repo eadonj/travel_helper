@@ -1,0 +1,18 @@
+<% if current_user %>
+  <div class="container">
+<ul>
+  <li><p><%=@current_user.name%></p></l>
+  <li><p><%=@current_user.email%></p></l>
+  <img src="<%=@current_user.photo%>">
+</ul>
+ <a href='/logout'>Logout </a>
+</div>
+
+<% else %>
+
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <a href='<%=@url %>'>Sign me in</a>
+</div>
+
+<% end %>

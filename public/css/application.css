@@ -1,0 +1,45 @@
+div.demo_cal {
+	width: 600px;
+	height: 400px;
+	margin: 40px auto 0;
+	border: 1px solid #bbb;
+	background: #fff;
+}
+
+div.demo_cal > div.demo_cal_col{
+	float:left;
+	border-right: 1px solid #bbb;
+	width:149px;
+	height:400px;
+	position:relative;
+}
+
+div.demo_cal > div.demo_cal_col_last {
+	float:left;
+	width:149px;
+	height:400px;
+	position:relative;
+}
+
+div.demo_event{
+	position: absolute;
+  cursor: move;
+  width: 141px;
+  height: 32px;
+  background: #6af;
+  color: #fff;
+  padding: 4px;
+  font-weight: bold;
+  z-index: 1x;
+}
+
+
+.hotels{
+	height: 200px;
+	width: 200px;
+}
+
+.hotels img{
+	height: 75px;
+	width: 75px;
+}

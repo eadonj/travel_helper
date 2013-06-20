@@ -1,0 +1,10 @@
+<div class="demo_cal">
+		<div class="hotels">
+			  <% @hotel.each do |hotel| %>
+				<div class="img"><img src="http://<%=hotel.image_url%>"></div>
+				<p class="name"><%= hotel.name %></p>
+				<p class="description"><%= hotel.description %></p>
+			<% end %>
+	</div>
+</div>
+
