@@ -1,3 +1,7 @@
+html{
+  background-color: #ECF0F1;
+}
+
 div.calendar {
   width: 95%;
 	margin: 40px auto 0;
@@ -10,15 +14,19 @@ div.calendar {
   overflow-x: hidden;
   float: left;
   margin-right: 20px;
+  padding: 10px;
+  border: 6px solid #2C3E50;
+  background-color: #2C3E50;
 }
 
 .column{
   height: 750px;
   width: 12%;
-  background-color: #ECF0F1;
+  background-color: #95A5A6;
   border: 3px solid #2C3E50;
   float: left;
   margin: 10px 1%;
+  border-radius: 6px;
 }
 
 .hotels{
@@ -26,6 +34,7 @@ div.calendar {
   margin-bottom: 10px;
   background-color: #ECF0F1;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .hotels .info {
@@ -108,7 +117,7 @@ div.calendar {
 #search{
   width: 25%;  
   height: 50px;
-  margin: 40px 0 5px 50px;
+  margin: 40px 0 5px 60px;
 }
 
 #search_bar{
@@ -120,8 +129,9 @@ div.calendar {
 
 #search_button{
   height: 54px;
+  width: 150px;
   margin-top: -1px;
-  background-color: #16A085;
+  background-color: #2C3E50;
   color: #ECF0F1;
   border-radius: 5px;
 }

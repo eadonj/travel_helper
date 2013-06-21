@@ -47,9 +47,10 @@ $(document).ready(function() {
   $("#search").submit(function(e){
     e.preventDefault();
     console.log("i'm here");
+    $('#search_bar').val('');
     $.ajax({
     	url: '/calendar',
-    	action: '/post',
+    	method: 'POST',
     	data: $(this).serialize()
     });
   })
