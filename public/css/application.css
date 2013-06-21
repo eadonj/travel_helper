@@ -9,7 +9,7 @@ div.calendar {
 
 #listing{
   width: 25%;
-  height: 800px;
+  height: 750px;
   overflow-y: scroll;
   overflow-x: hidden;
   float: left;
@@ -115,7 +115,7 @@ div.calendar {
 }
 
 #search{
-  width: 25%;  
+  width: 50%;  
   height: 50px;
   margin: 40px 0 5px 60px;
 }
@@ -135,3 +135,37 @@ div.calendar {
   color: #ECF0F1;
   border-radius: 5px;
 }
+
+#search_filters{
+  width: 100%;
+  float: left;
+  margin-left: -20px;
+}
+
+
+#search_filters li{
+  display: inline;
+  list-style: none;
+  background-color: #34495E;
+  padding: 20px 30px;
+  border-radius: 5px;
+  color: #aaa;
+  z-index: -1;
+  cursor: pointer;
+}
+
+#search_filters .active{
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+.hover_column{
+  height: 750px;
+  width: 12%;
+  background-color: #ddd;
+  border: 3px solid #2C3E50;
+  float: left;
+  margin: 10px 1%;
+  border-radius: 6px;
+}
+
