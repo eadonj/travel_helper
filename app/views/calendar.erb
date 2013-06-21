@@ -1,10 +1,29 @@
-<div class="demo_cal">
-		<div class="hotels">
-			  <% @hotel.each do |hotel| %>
-				<div class="img"><img src="http://<%=hotel.image_url%>"></div>
-				<p class="name"><%= hotel.name %></p>
-				<p class="description"><%= hotel.description %></p>
-			<% end %>
-	</div>
+<form id="search" action='/calendar' method='POST'>
+  <input id="search_bar" type="text" name="destination" placeholder="enter destination">
+  <input id="search_button" type="button" value="get a traveling">
+</form>
+
+<div class="calendar">
+  <div id="listing">
+    <% @hotel.each do |hotel| %>
+    <div class="hotels">
+      <div class="img"><img src="http://<%=hotel.image_url%>"></div>
+      <div class="info">
+        <p class="name"><%= hotel.name %></p>
+        <p class="description"><%= hotel.description %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class='column'><p>Monday</p>
+  </div>
+  <div class='column'><p>Tuesday</p>
+  </div>
+  <div class='column'><p>Wednesday</p>
+  </div>
+  <div class='column'><p>Thursday</p>
+  </div>
+  <div class='column'><p>Friday</p>
+  </div>
 </div>
 

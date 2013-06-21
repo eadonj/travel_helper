@@ -1,45 +1,127 @@
-div.demo_cal {
-	width: 600px;
-	height: 400px;
+div.calendar {
+  width: 95%;
 	margin: 40px auto 0;
-	border: 1px solid #bbb;
-	background: #fff;
 }
 
-div.demo_cal > div.demo_cal_col{
-	float:left;
-	border-right: 1px solid #bbb;
-	width:149px;
-	height:400px;
-	position:relative;
+#listing{
+  width: 25%;
+  height: 800px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  float: left;
+  margin-right: 20px;
 }
 
-div.demo_cal > div.demo_cal_col_last {
-	float:left;
-	width:149px;
-	height:400px;
-	position:relative;
+.column{
+  height: 750px;
+  width: 12%;
+  background-color: #ECF0F1;
+  border: 3px solid #2C3E50;
+  float: left;
+  margin: 10px 1%;
 }
-
-div.demo_event{
-	position: absolute;
-  cursor: move;
-  width: 141px;
-  height: 32px;
-  background: #6af;
-  color: #fff;
-  padding: 4px;
-  font-weight: bold;
-  z-index: 1x;
-}
-
 
 .hotels{
-	height: 200px;
-	width: 200px;
+	width: 99%;
+  margin-bottom: 10px;
+  background-color: #ECF0F1;
+  overflow: hidden;
+}
+
+.hotels .info {
+  height: 150px;
+  border: 3px solid #2C3E50;
 }
 
 .hotels img{
-	height: 75px;
-	width: 75px;
+	height: 125px;
+	width: 50%;
+  float: left;
+  margin: 10px;
+}
+
+.hotels .img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.hotels .name{
+  width: 100%;
+  margin: 10px auto 5px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hotels .description{
+  font-size: 14px;
+  margin: 0 5px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hotels.picked_up {
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+
+.hotels.picked_up .description {
+  display: none;
+}
+
+.hotels.picked_up img {
+  display: none;
+
+}
+
+.hotels.dropped {
+  width: 125px;
+  /*height: 150px;*/
+  margin: 5px auto;
+}
+
+.hotels.dropped .description {
+  display: none;
+}
+
+.hotels.dropped img {
+  width: 115px;
+  height: 75px;
+  margin: 5px;
+}
+
+.hotels.dropped .img{
+  width: 125px;
+}
+
+.hotels.dropped .name{
+  font-size: 17px;
+}
+
+.column p{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+#search{
+  width: 25%;  
+  height: 50px;
+  margin: 40px 0 5px 50px;
+}
+
+#search_bar{
+  height: 50px;
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+#search_button{
+  height: 54px;
+  margin-top: -1px;
+  background-color: #16A085;
+  color: #ECF0F1;
+  border-radius: 5px;
 }
