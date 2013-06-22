@@ -1,3 +1,5 @@
+require 'csv'
+
 helpers do
 
   def image_url_list
@@ -27,4 +29,17 @@ helpers do
                               image_url: images[index])
     end
   end
+
+
+
+  # def seed_hotels
+  #   @hotels = Hotel.all
+
+  #   CSV.open('hotels.csv', 'wb') do |csv|
+  #     @hotels.each do |hotel|
+  #       csv << [hotel.name, hotel.description, hotel.location, hotel.image_url]
+  #     end
+  #   end
+  # end
+
 end
